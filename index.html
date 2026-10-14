@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="disabled-adaptations" content="watch">
+  <title>Politik - Demografie</title>
+  <meta name="description" content="Lernzettel Politik Kapitel 1: Demografischer Wandel und gesellschaftlicher Zusammenhalt, für Handy und Apple Watch.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f5f1;
+      --ink: #171c1f;
+      --muted: #596267;
+      --panel: #ffffff;
+      --line: #d8dedc;
+      --blue: #285c95;
+      --red: #a52f2f;
+      --green: #2f6e46;
+      --orange: #b15e18;
+      --purple: #5b3f91;
+      --dark: #2b3135;
+      --soft-blue: #eaf2ff;
+      --soft-red: #ffeceb;
+      --soft-green: #eaf7ed;
+      --soft-orange: #fff0df;
+      --soft-purple: #f1ecfb;
+      --soft-dark: #eceeef;
+      --radius: 20px;
+      --shadow: 0 18px 42px rgba(23, 28, 31, 0.1);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      scroll-behavior: smooth;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(40, 92, 149, 0.14), transparent 28%),
+        var(--bg);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.45;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+
+    .shell {
+      width: min(980px, calc(100vw - 24px));
+      margin: 0 auto;
+      padding: 18px 0 44px;
+    }
+
+    .masthead,
+    .topic-card,
+    .jump-nav {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: var(--shadow);
+    }
+
+    .masthead {
+      position: relative;
+      overflow: hidden;
+      padding: 19px;
+      margin-bottom: 14px;
+    }
+
+    .masthead::after {
+      content: "2,1";
+      position: absolute;
+      right: -6px;
+      bottom: -30px;
+      color: rgba(40, 92, 149, 0.11);
+      font-size: 5.2rem;
+      font-weight: 950;
+      line-height: 1;
+    }
+
+    .label {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: 0.8rem;
+      font-weight: 900;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      position: relative;
+      margin: 0;
+      font-size: 2.12rem;
+      line-height: 1.04;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      position: relative;
+      max-width: 760px;
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 1.03rem;
+      font-weight: 700;
+    }
+
+    .jump-nav {
+      position: sticky;
+      top: 8px;
+      z-index: 10;
+      display: grid;
+      gap: 8px;
+      margin-bottom: 14px;
+      padding: 12px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.98);
+    }
+
+    .jump-label {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    select {
+      width: 100%;
+      min-height: 48px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      color: var(--ink);
+      background: var(--panel);
+      font: inherit;
+      font-size: 1rem;
+      font-weight: 850;
+    }
+
+    .topics {
+      display: grid;
+      gap: 16px;
+    }
+
+    .topic-card {
+      scroll-margin-top: 92px;
+      overflow: hidden;
+    }
+
+    .topic-head {
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--line);
+      background: var(--soft-blue);
+    }
+
+    .topic-head.red { background: var(--soft-red); }
+    .topic-head.green { background: var(--soft-green); }
+    .topic-head.orange { background: var(--soft-orange); }
+    .topic-head.purple { background: var(--soft-purple); }
+    .topic-head.dark { background: var(--soft-dark); }
+
+    .topic-meta {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 7px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 29px;
+      padding: 0 11px;
+      border-radius: 999px;
+      color: #ffffff;
+      background: var(--blue);
+      font-size: 0.78rem;
+      font-weight: 900;
+    }
+
+    .pill.red { background: var(--red); }
+    .pill.green { background: var(--green); }
+    .pill.orange { background: var(--orange); }
+    .pill.purple { background: var(--purple); }
+    .pill.dark { background: var(--dark); }
+
+    .count {
+      color: var(--muted);
+      font-size: 0.87rem;
+      font-weight: 800;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.72rem;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+
+    .blocks {
+      display: grid;
+      gap: 12px;
+      padding: 14px;
+    }
+
+    .block {
+      border: 1px solid var(--line);
+      border-left: 7px solid var(--blue);
+      border-radius: 15px;
+      padding: 13px 13px 12px;
+      background: #ffffff;
+    }
+
+    .block.term { background: #f7fbff; border-left-color: var(--blue); }
+    .block.warning { background: #fff5f4; border-left-color: var(--red); }
+    .block.remember { background: #fbfaf7; border-left-color: #222222; }
+    .block.timeline { background: #f7fff8; border-left-color: var(--green); }
+    .block.shapes { background: #f9f7ff; border-left-color: var(--purple); }
+
+    .block-head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 10px;
+      align-items: baseline;
+      justify-content: space-between;
+      margin: 0 0 8px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.08rem;
+      line-height: 1.2;
+    }
+
+    .source {
+      color: var(--muted);
+      font-size: 0.74rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    ul {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      position: relative;
+      padding-left: 21px;
+      font-size: 1rem;
+      font-weight: 680;
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.64em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+      opacity: 0.42;
+    }
+
+    .block.warning li::before,
+    .block.remember li::before { content: "!"; top: 0; width: auto; height: auto; border-radius: 0; background: transparent; color: var(--red); opacity: 1; font-weight: 900; }
+    .block.timeline li::before { content: "→"; top: 0; width: auto; height: auto; border-radius: 0; background: transparent; color: var(--green); opacity: 1; font-weight: 900; }
+
+    .shape-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .shape-grid figure {
+      margin: 0;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #ffffff;
+      text-align: center;
+    }
+
+    .shape-grid svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .shape-grid figcaption {
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .footer {
+      margin: 14px 2px 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 420px) {
+      .shell {
+        width: min(100vw - 12px, 100%);
+        padding-top: 8px;
+      }
+
+      .masthead {
+        padding: 14px;
+      }
+
+      .masthead::after {
+        display: none;
+      }
+
+      .jump-nav {
+        top: 6px;
+        padding: 10px;
+      }
+
+      select {
+        font-size: 0.9rem;
+      }
+
+      h1 {
+        font-size: 1.42rem;
+      }
+
+      .subtitle {
+        display: none;
+      }
+
+      .topic-head {
+        padding: 13px;
+      }
+
+      h2 {
+        font-size: 1.17rem;
+      }
+
+      .blocks {
+        padding: 10px;
+        gap: 10px;
+      }
+
+      .block {
+        padding: 11px 10px;
+        border-radius: 12px;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      li {
+        font-size: 0.91rem;
+        line-height: 1.35;
+      }
+    }
+
+    /* Apple Watch: ca. 160–210 px breit */
+    @media (max-width: 230px) {
+      html { background: #ffffff; }
+
+      .shell {
+        width: 100%;
+        padding: 2px 2px 24px;
+      }
+
+      .masthead,
+      .topic-card,
+      .jump-nav {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .masthead {
+        padding: 4px 4px 6px;
+        margin-bottom: 4px;
+      }
+
+      .label,
+      .jump-label,
+      .count,
+      .footer {
+        display: none;
+      }
+
+      h1 {
+        font-size: 1.05rem;
+      }
+
+      .jump-nav {
+        top: 0;
+        padding: 2px 0 6px;
+        margin-bottom: 6px;
+        background: #ffffff;
+      }
+
+      select {
+        min-height: 40px;
+        padding: 0 6px;
+        border-radius: 10px;
+        font-size: 0.82rem;
+      }
+
+      .topics {
+        gap: 10px;
+      }
+
+      .topic-card {
+        scroll-margin-top: 54px;
+      }
+
+      .topic-head {
+        padding: 7px 6px;
+        border-radius: 10px;
+      }
+
+      .topic-meta {
+        margin-bottom: 3px;
+      }
+
+      .pill {
+        min-height: 20px;
+        padding: 0 7px;
+        font-size: 0.66rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      .blocks {
+        padding: 6px 0 0;
+        gap: 7px;
+      }
+
+      .block {
+        padding: 7px 6px;
+        border-width: 0 0 0 4px;
+        border-radius: 8px;
+      }
+
+      .block-head {
+        margin-bottom: 5px;
+      }
+
+      h3 {
+        font-size: 0.88rem;
+      }
+
+      .source {
+        font-size: 0.62rem;
+        white-space: normal;
+      }
+
+      ul {
+        gap: 5px;
+      }
+
+      li {
+        padding-left: 13px;
+        font-size: 0.8rem;
+        font-weight: 650;
+        line-height: 1.3;
+      }
+
+      li::before {
+        width: 6px;
+        height: 6px;
+      }
+
+      .block.timeline li {
+        padding-left: 16px;
+      }
+
+      .block.timeline li::before {
+        font-size: 0.75rem;
+      }
+
+      .shape-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <p class="label">Politik Lernzettel</p>
+      <h1>Demografischer Wandel</h1>
+      <p class="subtitle">Kapitel 1, S. 8–44: Bevölkerung, Ursachen, Folgen, Rente und Migration. Kurzarbeit am 15.10.2026.</p>
+    </header>
+
+    <nav class="jump-nav" aria-label="Themenauswahl">
+      <label class="jump-label" for="topicSelect">Zum Thema springen</label>
+      <select id="topicSelect"></select>
+    </nav>
+
+    <section class="topics" id="topics"></section>
+
+    <p class="footer">Quellen: Heft, Musterlösung Bevölkerungspyramide 2009, Politik aktuell G9 (WK = Wissen kompakt, WiK = Wissen im Kontext).</p>
+  </main>
+
+  <script src="./content.js"></script>
+  <script>
+    const topics = window.TOPICS || [];
+    const topicsRoot = document.getElementById("topics");
+    const topicSelect = document.getElementById("topicSelect");
+
+    // Pyramidenformen aus dem Heft, nachgezeichnet (Linien bei 60 und 15 Jahren)
+    const SHAPES = [
+      "M10 46 L30 8 L50 46",
+      "M5 46 Q24 42 28 26 Q30 14 31 7 Q34 30 44 40 Q50 44 55 46",
+      "M15 46 L15 30 Q18 16 30 8 Q42 16 45 30 L45 46",
+      "M5 45 Q12 46 16 40 Q22 18 36 8 Q42 8 43 26 L44 42 Q47 46 55 46",
+      "M19 46 Q14 34 15 24 Q22 14 33 5 Q40 14 43 22 Q43 34 37 46",
+      "M25 46 L17 33 L37 4 L44 30 L35 46",
+      "M30 46 L30 27 Q18 28 18 22 Q24 12 33 2 L35 15 Q42 22 30 27"
+    ];
+
+    function shapeSvg(path) {
+      return `<svg viewBox="0 0 60 50" aria-hidden="true">
+        <line x1="2" y1="8" x2="58" y2="8" stroke="#9aa3a8" stroke-width="0.8" stroke-dasharray="2 2"/>
+        <line x1="2" y1="26" x2="58" y2="26" stroke="#9aa3a8" stroke-width="0.8" stroke-dasharray="2 2"/>
+        <line x1="2" y1="46" x2="58" y2="46" stroke="#171c1f" stroke-width="1"/>
+        <path d="${path}" fill="none" stroke="#5b3f91" stroke-width="1.8" stroke-linejoin="round"/>
+      </svg>`;
+    }
+
+    function escapeHtml(text) {
+      return String(text)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;");
+    }
+
+    function renderBlock(block) {
+      const shapes = block.type === "shapes"
+        ? `<div class="shape-grid">${SHAPES.map((path, i) => `<figure>${shapeSvg(path)}<figcaption>Form ${i + 1}</figcaption></figure>`).join("")}</div>`
+        : "";
+      return `
+        <article class="block ${escapeHtml(block.type)}">
+          <div class="block-head">
+            <h3>${escapeHtml(block.title)}</h3>
+            ${block.source ? `<span class="source">${escapeHtml(block.source)}</span>` : ""}
+          </div>
+          <ul>
+            ${block.items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}
+          </ul>
+          ${shapes}
+        </article>
+      `;
+    }
+
+    function render() {
+      topicSelect.innerHTML = topics.map((topic, index) =>
+        `<option value="${escapeHtml(topic.id)}">${index + 1}. ${escapeHtml(topic.title)}</option>`
+      ).join("");
+
+      topicsRoot.innerHTML = topics.map((topic, index) => `
+        <article class="topic-card" id="${escapeHtml(topic.id)}">
+          <header class="topic-head ${escapeHtml(topic.accent)}">
+            <div class="topic-meta">
+              <span class="pill ${escapeHtml(topic.accent)}">${escapeHtml(topic.badge)}</span>
+              <span class="count">${index + 1} / ${topics.length}</span>
+            </div>
+            <h2>${escapeHtml(topic.title)}</h2>
+          </header>
+          <div class="blocks">
+            ${topic.blocks.map(renderBlock).join("")}
+          </div>
+        </article>
+      `).join("");
+    }
+
+    render();
+
+    topicSelect.addEventListener("change", () => {
+      const target = document.getElementById(topicSelect.value);
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  </script>
+</body>
+</html>
