@@ -502,7 +502,7 @@
     <header class="masthead">
       <p class="label">Politik Lernzettel</p>
       <h1>Demografischer Wandel</h1>
-      <p class="subtitle">Kapitel 1, S. 8–35: Bevölkerung, Ursachen und Folgen (ohne 1.4). Kurzarbeit am 15.10.2026.</p>
+      <p class="subtitle">Kapitel 1.1–1.3: Bevölkerung, Ursachen, Folgen.</p>
     </header>
 
     <nav class="jump-nav" aria-label="Themenauswahl">
@@ -512,7 +512,6 @@
 
     <section class="topics" id="topics"></section>
 
-    <p class="footer">Quellen: Heft, Musterlösung Bevölkerungspyramide 2009, Politik aktuell G9 (WK = Wissen kompakt, WiK = Wissen im Kontext).</p>
   </main>
 
   <script src="./content.js"></script>
@@ -560,9 +559,7 @@
             <h3>${escapeHtml(block.title)}</h3>
             ${block.source ? `<span class="source">${escapeHtml(block.source)}</span>` : ""}
           </div>
-          <ul>
-            ${block.items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}
-          </ul>
+          ${block.items.length ? `<ul>${block.items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : ""}
           ${shapes}
         </article>
       `;

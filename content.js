@@ -1,679 +1,482 @@
 window.TOPICS = [
   {
-    id: "check",
-    title: "Kurzarbeit Do 15.10.",
-    badge: "Check",
-    accent: "dark",
-    blocks: [
+    "id": "begriffe",
+    "title": "Grundbegriffe",
+    "badge": "1.1",
+    "accent": "blue",
+    "blocks": [
       {
-        type: "remember",
-        title: "Was drankommt",
-        source: "Mail Frau Sachs",
-        items: [
-          "Kapitel 1: Die Bedeutung der demografischen Entwicklung für den gesellschaftlichen Zusammenhalt verstehen",
-          "Buch S. 8–44",
-          "Methoden: Diagramme analysieren + Bevölkerungspyramide",
-          "Wissen kompakt + Wissen im Kontext lernen",
-          "1.4 (Rente, Migration) kommt nicht dran"
+        "type": "term",
+        "title": "Demografie",
+        "items": [
+          "Bevölkerungswissenschaft: erforscht Struktur der Bevölkerung und ihre Veränderung",
+          "3 Faktoren: Geburten, Lebensdauer (Sterblichkeit), Migration"
+        ]
+      },
+      {
+        "type": "term",
+        "title": "Demografischer Wandel",
+        "items": [
+          "Veränderung von Altersstruktur, Verhältnis Männer/Frauen, Geburten- und Sterbefällen, Migration, Emigration, ethnischer Zusammensetzung"
+        ]
+      },
+      {
+        "type": "term",
+        "title": "Gesellschaft – Gemeinschaft",
+        "items": [
+          "Gesellschaft: viele Gruppen, geregelt durch Normen, Konventionen, Gesetze; individuelle Freiheit, zweck- und nutzenorientiert",
+          "Gemeinschaft: größere Nähe und Verbundenheit",
+          "Soziologie: Wissenschaft von der Gesellschaft"
+        ]
+      },
+      {
+        "type": "term",
+        "title": "Sozialstruktur",
+        "items": [
+          "Einteilung einer Gesellschaft nach sozialen Merkmalen",
+          "Altersaufbau, Lebensformen, Bildung, Arbeit, Einkommen, Aufstiegschancen, Zuwanderung, Ethnie, Religion"
+        ]
+      },
+      {
+        "type": "term",
+        "title": "Weitere Fachbegriffe",
+        "items": [
+          "Geburtenziffer (Fertilitätsrate): Kinder pro Frau",
+          "Bestandserhaltung: 2,1 Kinder pro Frau",
+          "Geburtendefizit: mehr Sterbefälle als Geburten",
+          "Wanderungssaldo: Zuzüge minus Fortzüge",
+          "Binnenmigration: Wanderung innerhalb eines Staates",
+          "Migrationshintergrund: man selbst oder ein Elternteil hat die deutsche Staatsangehörigkeit nicht durch Geburt",
+          "Medianalter: die Hälfte ist jünger, die Hälfte älter"
         ]
       }
     ]
   },
   {
-    id: "begriffe",
-    title: "1.1 Grundbegriffe",
-    badge: "1.1",
-    accent: "blue",
-    blocks: [
+    "id": "entwicklung",
+    "title": "Bevölkerung & Sozialstruktur",
+    "badge": "1.1",
+    "accent": "blue",
+    "blocks": [
       {
-        type: "term",
-        title: "Demografie",
-        source: "Heft · WK S. 18",
-        items: [
-          "= Bevölkerungswissenschaft",
-          "Erforscht die soziale Struktur der Bevölkerung und deren Veränderung",
-          "3 Faktoren bestimmen die Bevölkerung: Geburten, Lebensdauer, Migration"
+        "type": "timeline",
+        "title": "Bevölkerungsentwicklung",
+        "items": [
+          "Nach dem 2. Weltkrieg: +14 Mio. Einwohner",
+          "Seit 1972 mehr Sterbefälle als Geburten",
+          "Ausgleich nur durch Zuwanderung",
+          "2019: über 1/4 mit Migrationshintergrund",
+          "Geburtendefizit: heute ca. 170.000, bis 2050 über 400.000 pro Jahr",
+          "Übliche Nettozuwanderung (ca. 250.000/Jahr) reicht dann nicht mehr",
+          "Grund: kleinere Elterngeneration + Babyboomer erreichen hohes Sterbealter",
+          "Medianalter: ca. 35 (1960er) → ca. 45 heute",
+          "Prognose: Bevölkerung schrumpft und altert"
         ]
       },
       {
-        type: "term",
-        title: "Demografischer Wandel",
-        source: "Heft · WK S. 18",
-        items: [
-          "Veränderungen der Bevölkerungsentwicklung bei:",
-          "Altersstruktur",
-          "Verhältnis Männer zu Frauen (Anzahl)",
-          "Geburten- und Sterbefallentwicklung",
-          "Migration, Emigration",
-          "ethnischer Zusammensetzung"
+        "type": "timeline",
+        "title": "Sozialstruktur im Wandel",
+        "items": [
+          "Einkommen: Ungleichheit wächst, oberste 10 % besitzen rund 1/3 des Vermögens",
+          "Herkunft: Ausländeranteil 1990 ca. 5,6 % → 2020 ca. 12,7 %, meist aus der EU",
+          "Haushalte: immer kleiner, Einpersonenhaushalte häufigste Form (ca. 42 %)",
+          "Lebensformen: Singles und Paare ohne Kinder überwiegen",
+          "Religion: ca. 50 % Christen, ca. 40 % konfessionslos, ca. 6–7 % Muslime"
         ]
       },
       {
-        type: "term",
-        title: "Gesellschaft vs. Gemeinschaft",
-        source: "WK S. 18",
-        items: [
-          "Gesellschaft: viele Gruppen, geregelt durch Normen, Konventionen, Gesetze",
-          "Gesellschaft: individuelle Freiheit, Zusammenleben zweck- und nutzenorientiert",
-          "Gemeinschaft: mehr Nähe und Verbundenheit",
-          "Soziologie = Wissenschaft von der Gesellschaft"
-        ]
-      },
-      {
-        type: "term",
-        title: "Sozialstruktur",
-        source: "WK S. 18",
-        items: [
-          "Einteilung einer Gesellschaft nach sozialen Merkmalen + Vergleich",
-          "Bereiche: Altersaufbau, Lebensformen, Bildung, Arbeit, Einkommen, Aufstiegschancen, Zuwanderung, ethnische Zusammensetzung, Religion"
+        "type": "timeline",
+        "title": "Stadt und Land",
+        "items": [
+          "Stadtbevölkerung: 71,4 % (1960) → 77,5 % (2020)",
+          "Binnenwanderung Ost → West und Land → Stadt",
+          "Ländliche Regionen: Ärzte, ÖPNV und Schulen schwer zu halten",
+          "Staatsziel (GG, Bayerische Verfassung): gleichwertige Lebensverhältnisse"
         ]
       }
     ]
   },
   {
-    id: "thesen",
-    title: "1.1 Thesen & Einschnitte",
-    badge: "1.1",
-    accent: "blue",
-    blocks: [
+    "id": "einschnitte",
+    "title": "Einschnitte & Ursachen",
+    "badge": "1.1",
+    "accent": "blue",
+    "blocks": [
       {
-        type: "term",
-        title: "Demografische Situation DE – Thesen",
-        source: "Heft",
-        items: [
+        "type": "term",
+        "title": "Demografische Lage in Deutschland",
+        "items": [
           "Vielfältige Familienformen",
           "Zu wenige Kinder",
           "Viele alte Menschen",
-          "Teure Städte"
+          "Teure Städte, Zuzug in Ballungsräume"
         ]
       },
       {
-        type: "timeline",
-        title: "Ursachen für Einschnitte",
-        source: "Heft · Buch S. 11",
-        items: [
+        "type": "timeline",
+        "title": "Ursachen für Einschnitte",
+        "items": [
           "Kriege",
-          "Fortschritte in der Medizin",
-          "Seuchen (HIV)",
+          "Medizinischer Fortschritt",
+          "Seuchen (HIV, Corona)",
           "Naturkatastrophen",
-          "Allgemeine gesellschaftliche Entwicklungen",
+          "Gesellschaftliche und wirtschaftliche Entwicklungen",
           "Politische Entscheidungen",
-          "Pillenknick (Fachbegriff!)"
+          "Pillenknick"
         ]
       },
       {
-        type: "term",
-        title: "Pillenknick",
-        source: "Buch S. 11",
-        items: [
-          "Sinkende Geburtenrate fällt zusammen mit Einführung der Antibabypille",
-          "Die Pille allein erklärt den Geburtenrückgang aber nicht"
+        "type": "term",
+        "title": "Pillenknick",
+        "items": [
+          "Geburtenrückgang ab Mitte der 1960er, zeitgleich mit der Antibabypille",
+          "Pille allein erklärt den Rückgang nicht (auch Wertewandel, Berufstätigkeit der Frauen)"
         ]
       },
       {
-        type: "term",
-        title: "Babyboomer",
-        source: "Buch S. 11",
-        items: [
-          "Generation, die bei steigenden Geburtenraten nach dem 2. Weltkrieg geboren wurde"
+        "type": "term",
+        "title": "Babyboomer",
+        "items": [
+          "Geburtenstarke Jahrgänge nach dem 2. Weltkrieg (ca. 1955–1969)"
+        ]
+      },
+      {
+        "type": "timeline",
+        "title": "Pyramide 2030: Einschnitte von oben",
+        "items": [
+          "Ca. 85–90 Jahre: Geburtentief 2. Weltkrieg",
+          "Ca. 60–70 Jahre: Babyboomer (breiteste Stelle)",
+          "Ca. 50–60 Jahre: Pillenknick",
+          "Ca. 30–40 Jahre: Geburtentief nach der Wiedervereinigung",
+          "Gesamtform: Urne"
         ]
       }
     ]
   },
   {
-    id: "uebung2030",
-    title: "Übung: Pyramide 2030",
-    badge: "Übung",
-    accent: "blue",
-    blocks: [
+    "id": "formen",
+    "title": "Pyramidenformen",
+    "badge": "Formen",
+    "accent": "blue",
+    "blocks": [
       {
-        type: "timeline",
-        title: "Einschnitte von oben nach unten",
-        source: "Heft",
-        items: [
-          "Ganz oben (ca. 85–90): Geburtentief 2. Weltkrieg",
-          "Ca. 60–70: Babyboomer (breiteste Stelle)",
-          "Ca. 50–60: Pillenknick",
-          "Ca. 30–40: Geburtentief Wiedervereinigung"
-        ]
+        "type": "shapes",
+        "title": "7 Grundformen",
+        "labels": [
+          "Pyramide",
+          "Pagode",
+          "Bienenkorb",
+          "Glocke",
+          "Urne",
+          "Zwiebel",
+          "Pilz"
+        ],
+        "items": []
       },
       {
-        type: "remember",
-        title: "Merken",
-        source: "Heft",
-        items: [
-          "Form: Urnenform",
-          "2009: ca. 700.000 Geburten",
-          "Männer und Frauen ausgeglichen, im Alter frauenlastig",
-          "Satzstarter: „Zuerst auffallend ist im Jahr … ein Einschnitt / Geburtentief / Geburtenhoch“"
+        "type": "term",
+        "title": "Bedeutung",
+        "items": [
+          "Pyramide: breite Basis, nach oben schmal → wachsende Bevölkerung (Entwicklungsländer, DE 1910)",
+          "Pagode: sehr breite Basis, spitz → sehr starkes Wachstum, hohe Geburten- und Sterberate (Nigeria)",
+          "Bienenkorb: Basis ≈ Mitte, oben rund → stationär (USA)",
+          "Glocke: breite Mitte, Basis leicht breiter → stagnierend",
+          "Urne: schmale Basis, breite Mitte → schrumpfend, alternd (Deutschland heute)",
+          "Zwiebel: unten schmal, bauchig → Übergang zu Überalterung",
+          "Pilz: dünner Stiel, breiter Hut → stark schrumpfend (Japan-Prognose)"
         ]
       }
     ]
   },
   {
-    id: "formen",
-    title: "Pyramidenformen",
-    badge: "Formen",
-    accent: "blue",
-    blocks: [
+    "id": "methode-pyramide",
+    "title": "Pyramide analysieren",
+    "badge": "Methode",
+    "accent": "purple",
+    "blocks": [
       {
-        type: "shapes",
-        title: "7 Formen aus dem Heft",
-        source: "Heft · Namen gegoogelt",
-        labels: ["Pyramide", "Pagode", "Bienenkorb", "Glocke", "Urne", "Zwiebel", "Pilz"],
-        items: [
-          "Rein formbezogen, Linien bei 60 und 15 Jahren"
+        "type": "timeline",
+        "title": "1. Einleitung",
+        "items": [
+          "Thema, Land, Jahr, Quelle",
+          "Senkrechte Achse: Alter (0–100)",
+          "Waagerechte Achse: Anzahl in Tausend",
+          "Männer links, Frauen rechts"
         ]
       },
       {
-        type: "term",
-        title: "Was die Form verrät",
-        source: "gegoogelt (Studyflix, LMU)",
-        items: [
-          "Pagode: sehr breite Basis, spitz → sehr starkes Wachstum, hohe Geburten- und Sterberate (z. B. Nigeria)",
-          "Pyramide: breite Basis, nach oben schmaler → wachsende Bevölkerung (Deutschland 1910, Entwicklungsländer)",
-          "Bienenkorb: Basis und Mitte etwa gleich breit, oben abgerundet → stationär, Geburten und Sterbefälle gleichbleibend (USA 2010)",
-          "Glocke: breite Mitte, unten wieder etwas breiter → stagnierend, wieder etwas mehr Geburten (Dänemark 1950er/60er)",
-          "Urne: schmale Basis, breite Mitte → schrumpfend, weniger Geburten, viele werden alt (Deutschland heute)",
-          "Zwiebel: unten schmal, bauchig → Übergang zu Überhang der Älteren, Urne = „überspitzte Zwiebel“",
-          "Pilz: dünner Stiel (kaum Junge), breiter Hut (viele Alte) → stark schrumpfend (Japan-Prognose)"
+        "type": "timeline",
+        "title": "2. Form",
+        "items": [
+          "Form benennen (z. B. Urne, keine Pyramide)",
+          "Schmale Basis → niedrige Geburtenrate → alternde Bevölkerung"
         ]
       },
       {
-        type: "warning",
-        title: "Achtung",
-        source: "Hinweis",
-        items: [
-          "Namen stehen nicht im Heft und nicht im Buch, Bezeichnungen schwanken je nach Quelle",
-          "Echte Pyramiden sind meist Mischformen"
-        ]
-      }
-    ]
-  },
-  {
-    id: "methode-pyramide",
-    title: "Methode: Pyramide analysieren",
-    badge: "Methode",
-    accent: "purple",
-    blocks: [
-      {
-        type: "timeline",
-        title: "① Einleitung",
-        source: "Musterlösung 2009",
-        items: [
-          "Thema + Land + Jahr: „Die Grafik zeigt den Altersaufbau der Bevölkerung Deutschlands im Jahr 2009.“",
-          "Senkrechte Achse: Alter 0–100 Jahre",
-          "Männer links (blau), Frauen rechts (rot)",
-          "Balkenlänge = Anzahl Menschen je Altersgruppe in Tausend"
+        "type": "timeline",
+        "title": "3. Auffälligkeiten (2009)",
+        "items": [
+          "0–20 Jahre: relativ gering besetzt",
+          "40–50 Jahre: stärkste Jahrgänge (Babyboomer)",
+          "65–75 Jahre: ebenfalls stark besetzt",
+          "Sehr hohes Alter: deutliche Abnahme",
+          "Einschnitte mit Ursachen benennen (Kriege, Pillenknick …)"
         ]
       },
       {
-        type: "timeline",
-        title: "② Form",
-        source: "Musterlösung 2009",
-        items: [
-          "Keine klassische Pyramidenform",
-          "Jüngere Altersgruppen deutlich kleiner als mittlere und ältere",
-          "0–20 Jahre: relativ wenige Menschen",
-          "Schmale Basis bei den Jüngsten → niedrige Geburtenrate → alternde Bevölkerung"
+        "type": "timeline",
+        "title": "4. Männer – Frauen",
+        "items": [
+          "Jung: ausgeglichen, teils mehr Männer",
+          "Ab ca. 60: deutlich mehr Frauen, über 80/90 noch stärker",
+          "Gründe: höhere Lebenserwartung der Frauen, Männerverluste im 2. Weltkrieg"
         ]
       },
       {
-        type: "timeline",
-        title: "③ Auffälligkeiten",
-        source: "Musterlösung 2009",
-        items: [
-          "Stärkste Jahrgänge: ca. 40–50 Jahre",
-          "Grund: geburtenstarke Jahrgänge nach dem 2. Weltkrieg",
-          "Auch 65–75 Jahre: vergleichsweise viele Menschen",
-          "Sehr hohe Altersgruppen: deutlich weniger Menschen"
-        ]
-      },
-      {
-        type: "timeline",
-        title: "④ Männer vs. Frauen",
-        source: "Musterlösung 2009",
-        items: [
-          "Jüngere Altersgruppen: kaum Unterschied, teils etwas mehr Männer",
-          "Ab ca. 60: deutlich mehr Frauen",
-          "Über 70: wesentlich mehr Frauen, über 80 und 90 noch deutlicher",
-          "Grund 1: höhere Lebenserwartung von Frauen",
-          "Grund 2: hoher Männerverlust im 2. Weltkrieg bei älteren Jahrgängen"
-        ]
-      },
-      {
-        type: "remember",
-        title: "⑤ Fazit",
-        source: "Musterlösung 2009",
-        items: [
+        "type": "timeline",
+        "title": "5. Fazit",
+        "items": [
           "Alternde Bevölkerung: schmale Basis, starke mittlere und ältere Jahrgänge",
-          "Frauenanteil steigt mit zunehmendem Alter",
-          "Merkmale des demografischen Wandels: niedrige Geburtenrate, steigende Lebenserwartung, wachsender Anteil Älterer"
+          "Frauenanteil steigt mit dem Alter",
+          "Merkmale des demografischen Wandels: niedrige Geburtenrate, steigende Lebenserwartung, mehr Ältere"
         ]
       }
     ]
   },
   {
-    id: "methode-diagramme",
-    title: "Methode: Diagramme analysieren",
-    badge: "Methode",
-    accent: "purple",
-    blocks: [
+    "id": "methode-diagramme",
+    "title": "Diagramme analysieren",
+    "badge": "Methode",
+    "accent": "purple",
+    "blocks": [
       {
-        type: "term",
-        title: "Statistik",
-        source: "Buch S. 16",
-        items: [
-          "Systematische Sammlung und Ordnung von Informationen in Zahlen",
-          "Dargestellt als Tabelle oder als Diagramm/Grafik"
-        ]
-      },
-      {
-        type: "timeline",
-        title: "1. Beschreiben",
-        source: "Buch S. 16",
-        items: [
-          "Thema des Diagramms?",
+        "type": "timeline",
+        "title": "1. Beschreiben",
+        "items": [
+          "Thema",
           "Balken/Säulen: Werte vergleichen",
-          "Linie/Kurve: zeitliche Entwicklung",
-          "Kreis/Torte: Anteile am Ganzen"
+          "Linie/Kurve: Entwicklung über Zeit",
+          "Kreis: Anteile am Ganzen"
         ]
       },
       {
-        type: "timeline",
-        title: "2. Analysieren",
-        source: "Buch S. 16",
-        items: [
-          "Maßeinheit? Absolute Zahlen?",
-          "„in Tausend“ / „in Millionen“ oder relativ in %?",
-          "Zeitpunkt oder Zeitraum?",
-          "Quelle?",
-          "Was zeigen die Zahlen?",
-          "Besonderheiten, Auffälligkeiten?",
-          "Größe der Stichprobe?"
+        "type": "timeline",
+        "title": "2. Analysieren",
+        "items": [
+          "Maßeinheit: absolut (Tausend, Millionen) oder relativ (%)",
+          "Zeitpunkt oder Zeitraum",
+          "Quelle",
+          "Aussage der Zahlen, Auffälligkeiten",
+          "Größe der Stichprobe"
         ]
       },
       {
-        type: "timeline",
-        title: "3. Interpretieren",
-        source: "Buch S. 16",
-        items: [
-          "Darstellung korrekt? Abstände im Koordinatensystem passend?",
-          "Aussage ins Thema einordnen",
-          "Fehlt etwas?",
-          "Was bleibt offen und braucht weitere Recherche?"
+        "type": "timeline",
+        "title": "3. Interpretieren",
+        "items": [
+          "Darstellung korrekt? Achsenabstände passend?",
+          "Einordnung ins Thema",
+          "Was fehlt, was bleibt offen?",
+          "Absicht der Darstellung hinterfragen"
         ]
       },
       {
-        type: "warning",
-        title: "Achtung, Manipulation",
-        source: "Buch S. 17",
-        items: [
-          "Beispiel Gesundheitsausgaben: in € mehr als verdoppelt, Anteil am BIP nur 9,4 → 11,9 %",
-          "Grund: €-Zahlen nicht inflationsbereinigt",
-          "Je nach Absicht: „Kostenexplosion“ (absolut) oder „moderat“ (% vom BIP)",
-          "Achsen stauchen oder strecken verändert die Steigung",
-          "Immer fragen: Warum gerade diese Darstellung?"
+        "type": "term",
+        "title": "Manipulation",
+        "items": [
+          "Achsen stauchen oder strecken ändert die Steigung",
+          "Absolute Zahlen statt % lassen Anstiege größer wirken",
+          "Nicht inflationsbereinigte €-Werte übertreiben",
+          "Beispiel Gesundheitsausgaben 1992–2019: in € mehr als verdoppelt, Anteil am BIP nur 9,4 → 11,9 %"
         ]
       }
     ]
   },
   {
-    id: "kontext11",
-    title: "1.1 Wissen im Kontext",
-    badge: "1.1",
-    accent: "blue",
-    blocks: [
+    "id": "familie",
+    "title": "Familie & Lebensformen",
+    "badge": "1.2",
+    "accent": "green",
+    "blocks": [
       {
-        type: "timeline",
-        title: "Bevölkerungsentwicklung",
-        source: "WiK S. 19",
-        items: [
-          "Nach dem 2. Weltkrieg: +14 Mio. Einwohner",
-          "Seit 1972 mehr Sterbefälle als Geburten (Geburtendefizit)",
-          "Ausgeglichen durch positiven Zuwanderungssaldo",
-          "2019: über 1/4 der Bevölkerung mit Migrationshintergrund"
+        "type": "term",
+        "title": "Familie",
+        "items": [
+          "Besonderes Solidaritätsverhältnis mit Schutzfunktion und Repräsentation nach außen",
+          "Eltern-Kind-Gemeinschaften: Ehepaare, nichteheliche (auch gleichgeschlechtliche) Paare, Alleinerziehende mit ledigen Kindern im Haushalt",
+          "Immer mindestens 2 Generationen"
         ]
       },
       {
-        type: "warning",
-        title: "Warum Zuwanderung bald nicht reicht",
-        source: "WiK S. 19",
-        items: [
-          "Niedrige Geburtenrate → heutige Elterngeneration kleiner → weniger mögliche Mütter",
-          "Geburtenstarke Jahrgänge kommen ins Sterbealter → mehr Sterbefälle",
-          "Geburtendefizit: heute 170.000 → bis 2050 über 400.000 pro Jahr",
-          "Übliche Nettozuwanderung von 250.000 pro Jahr reicht dann nicht mehr"
+        "type": "timeline",
+        "title": "1950er: „golden age of marriage“",
+        "items": [
+          "„Normalfamilie“ als gesellschaftlich richtige und rechtlich legitimierte Form",
+          "Früh geheiratet, ca. 95 % mindestens einmal verheiratet",
+          "Kaum Scheidungen, selten berufstätige Mütter",
+          "Unverheiratet: Priester, Ordensleute, Frauen (Männermangel nach dem 2. WK)",
+          "Andere Lebensformen galten als Notlösung und wurden sanktioniert"
         ]
       },
       {
-        type: "term",
-        title: "Alterung",
-        source: "WiK S. 19",
-        items: [
-          "Medianalter: ca. 35 (1960er) → ca. 45 (letztes Jahrzehnt)",
-          "Herausforderungen: Altersvorsorge, Gesundheitssystem, Infrastruktur"
+        "type": "timeline",
+        "title": "Heute: Pluralisierung",
+        "items": [
+          "Seit den 1970ern Vielfalt privater Lebensformen",
+          "Ehe mit Kindern noch häufigste Form, aber kein Leitbild mehr",
+          "Singles, nichteheliche Paare, Patchwork, gleichgeschlechtliche Paare, Alleinerziehende, WGs"
         ]
       },
       {
-        type: "term",
-        title: "Sozialstruktur im Wandel",
-        source: "WiK S. 19",
-        items: [
-          "Einkommensunterschiede verfestigt bzw. größer",
-          "Mehr Haushaltsformen: Paare ohne Kinder und Singles herrschen vor",
-          "Klassische Familie (Mutter, Vater, Kind) spätestens seit der Wiedervereinigung überholt",
-          "Mehr religiöse Vielfalt, am stärksten wachsen die Konfessionslosen (ca. 40 %)",
-          "Urbanisierung, Binnenwanderung Ost → West",
-          "Land: Ärzte, ÖPNV, Schulen schwer zu halten → weniger attraktiv für Junge"
+        "type": "term",
+        "title": "Werte und Wertewandel",
+        "items": [
+          "Werte: Vorstellungen davon, was wichtig ist; in der Sozialisation übernommen",
+          "Ändern sich im Leben und in der Gesellschaft",
+          "Familie bleibt wichtig (ca. 65 % brauchen Familie zum Glück), Bedeutung sinkt aber seit den 1990ern"
         ]
       },
       {
-        type: "term",
-        title: "Begriffe aus der Randspalte",
-        source: "Buch S. 12–15",
-        items: [
-          "Migrationshintergrund: man selbst oder mind. ein Elternteil hat die deutsche Staatsangehörigkeit nicht durch Geburt",
-          "Ausländer: alle ohne deutsche Staatsangehörigkeit (GG Art. 116)",
-          "Binnenmigration: Wanderung innerhalb eines Staates",
-          "Urbaner Raum: groß, dicht besiedelt, Zentrumsfunktion",
-          "Ländlicher Raum: „Restgröße“, weder Verdichtungsraum noch dessen Randzone"
+        "type": "term",
+        "title": "Geschlechterverhältnis",
+        "items": [
+          "Gleichberechtigung im GG",
+          "Seit 1977: Frauen dürfen ohne Zustimmung des Mannes arbeiten",
+          "Mehr Mädchen am Gymnasium, ca. 50 % Studienanfängerinnen",
+          "DAX-Vorstände 2022 nur 21,8 % Frauen",
+          "Gender-Pay-Gap: Frauen verdienen pro Stunde weniger"
         ]
       }
     ]
   },
   {
-    id: "familie",
-    title: "1.2 Familie & Lebensformen",
-    badge: "1.2",
-    accent: "green",
-    blocks: [
+    "id": "uebergang",
+    "title": "Demografischer Übergang",
+    "badge": "1.2",
+    "accent": "green",
+    "blocks": [
       {
-        type: "term",
-        title: "Familienbegriff",
-        source: "Heft",
-        items: [
-          "= besonderes Solidaritätsverhältnis",
-          "= mit ausgeprägter Schutzfunktion",
-          "= besondere Repräsentation nach außen",
-          "Politik/Soziologie: Eltern-Kind-Gemeinschaften",
-          "Also: Ehepaare, nichteheliche (gemischt- oder gleichgeschlechtliche) Lebensgemeinschaften, Alleinerziehende mit ledigen Kindern im eigenen Haushalt",
-          "→ Familie umfasst immer mind. 2 Generationen"
-        ]
-      },
-      {
-        type: "timeline",
-        title: "Differenzierung privater Lebensformen",
-        source: "Heft",
-        items: [
-          "1950er: „golden age of marriage“ → „Normalfamilie“ als fraglos gelobtes Muster",
-          "Gesellschaftlich „richtige“ und rechtlich legitimierte Lebensform",
-          "Merkmale: jung geheiratet, ca. 95 % mind. einmal verheiratet, kaum Scheidungen, selten berufstätige Mütter",
-          "Ohne Ehepartner: kath. Priester, Ordensleute, Frauen (Männermangel durch 2. WK), kleine Gruppe der Ehewilligen",
-          "„Alternative“ Lebensform = „Notlösung“",
-          "Abweichung → Sanktion"
-        ]
-      },
-      {
-        type: "remember",
-        title: "Ergebnis",
-        source: "Heft",
-        items: [
-          "→ Pluralisierung der privaten Lebensformen"
-        ]
-      },
-      {
-        type: "term",
-        title: "Lebensformen heute",
-        source: "WK S. 26",
-        items: [
-          "Seit den 1970ern stark verändert",
-          "Traditionelle Ehe-Familie noch häufigste Form, als Rollenmodell aber viel weniger wichtig",
-          "Wichtiger: Singles, nichteheliche Lebensgemeinschaften",
-          "Gleichgeschlechtliche Paare, Patchwork, Eltern ohne Trauschein, Alleinerziehende",
-          "Dazu zeitlich begrenzte Formen, z. B. WGs"
-        ]
-      },
-      {
-        type: "term",
-        title: "Werte",
-        source: "WK S. 26",
-        items: [
-          "Vorstellung davon, was einem wertvoll ist",
-          "In einem Kulturraum gibt es einen gewissen Wertekonsens",
-          "Werden in der Sozialisation übernommen und verinnerlicht",
-          "Ändern sich im Leben und in der Gesellschaft (Wertewandel)"
-        ]
-      },
-      {
-        type: "term",
-        title: "Geschlechterverhältnis",
-        source: "WK S. 26",
-        items: [
-          "Gleichstellung in Verfassung (Weimar, GG), durch Politik umgesetzt",
-          "Gymnasien: mehr Mädchen als Jungen, Erstsemester ca. 50 % Frauen",
-          "Seit 1977 (Familiengesetz): Frauen dürfen ohne Zustimmung des Mannes arbeiten",
-          "Noch nicht erreicht: Frauen in DAX-Vorständen 2022 nur 21,8 % (2012: 7,8 %)",
-          "Gender-Pay-Gap: unterschiedlicher Stundenlohn von Frauen und Männern für gleiche Arbeit"
+        "type": "timeline",
+        "title": "4 Phasen",
+        "items": [
+          "1 (bis Mitte 19. Jh.): Geburten- und Sterberate hoch",
+          "2 (bis 1. WK): Sterberate sinkt, Geburtenrate hoch → starkes Wachstum",
+          "3 (bis 1980er): Geburtenrate sinkt schneller → Wachstum verlangsamt",
+          "4 (heute): beide niedrig → Stagnation",
+          "Sonderform (DE, Italien, Japan): Sterberate > Geburtenrate → Schrumpfung ohne Zuwanderung"
         ]
       }
     ]
   },
   {
-    id: "uebergang",
-    title: "1.2 Demografischer Übergang",
-    badge: "1.2",
-    accent: "green",
-    blocks: [
+    "id": "ursachen",
+    "title": "Ursachen Geburtenrückgang",
+    "badge": "1.2",
+    "accent": "green",
+    "blocks": [
       {
-        type: "timeline",
-        title: "4-Phasen-Modell",
-        source: "WK S. 26",
-        items: [
-          "Phase 1 (bis Mitte 19. Jh.): Geburten- und Sterberate hoch, stark schwankend",
-          "Phase 2 (bis vor 1. WK): Sterberate sinkt, Geburtenrate bleibt → Geburtenüberschuss wächst, Bevölkerung wächst",
-          "Phase 3 (1. WK bis 1980er): Geburtenrate sinkt schneller als Sterberate → Wachstum verlangsamt",
-          "Phase 4 (1980er bis heute): beide niedrig → Stagnation oder kaum Wachstum"
+        "type": "term",
+        "title": "Zahlen",
+        "items": [
+          "Geburtenrate: ca. 1,4 (1990–2010), 1,58 (2022)",
+          "Bestandserhaltung bräuchte 2,1",
+          "Frauen mit 3+ Kindern: ca. 30 % (1970er) → ca. 16 %",
+          "Mütter bei der ersten Geburt immer älter"
         ]
       },
       {
-        type: "warning",
-        title: "Sonderform",
-        source: "WK S. 26",
-        items: [
-          "Sterberate höher als Geburtenrate → Bevölkerung schrumpft (ohne genug Zuwanderung)",
-          "Beispiele: Deutschland, Italien, Singapur, Japan"
-        ]
-      }
-    ]
-  },
-  {
-    id: "ursachen",
-    title: "1.2 Ursachen Geburtenrückgang",
-    badge: "1.2",
-    accent: "green",
-    blocks: [
-      {
-        type: "term",
-        title: "Zahlen",
-        source: "Buch S. 21–22",
-        items: [
-          "Bestandserhaltung: 2,1 Kinder pro Frau",
-          "Geburtenrate DE: 1,45 (1990) · 1,38 (2000) · 1,58 (2022)",
-          "3+ Kinder: Anfang 1970er ca. 30 % der Frauen, heute ca. 16 %"
-        ]
-      },
-      {
-        type: "timeline",
-        title: "Gründe nach Schäfers",
-        source: "Buch S. 23",
-        items: [
-          "Kinder sind keine Selbstverständlichkeit mehr",
-          "Werte der Arbeitswelt (lebenslanges Lernen, Flexibilität, Mobilität) gegen Familienwerte",
-          "Wirtschaft bevorzugt mobile, immer verfügbare Singles",
-          "Getrennte Karrieren von Mann und Frau erschweren die Planung",
+        "type": "timeline",
+        "title": "Ursachen (Schäfers)",
+        "items": [
+          "Kinder keine Selbstverständlichkeit mehr",
+          "Arbeitswelt verlangt Flexibilität und Mobilität",
+          "Wirtschaft bevorzugt den mobilen Single",
+          "Getrennte Karrieren erschweren Familienplanung",
           "Opportunitätskosten: Verzicht auf Karriere und Einkommen",
-          "Konsumdenken, anspruchsvoller Lebensstil",
-          "Zu wenig Kinderbetreuungsplätze"
+          "Konsum und anspruchsvoller Lebensstil",
+          "Zu wenig Kinderbetreuung"
         ]
       },
       {
-        type: "timeline",
-        title: "Wissen im Kontext",
-        source: "WiK S. 27",
-        items: [
-          "Geburtenziffer seit Jahrzehnten niedrig, Sterberate niedrig bis leicht steigend",
-          "Ohne Zuwanderung würde die Bevölkerung stetig schrumpfen, Durchschnittsalter steigt trotzdem",
+        "type": "timeline",
+        "title": "Weitere Ursachen",
+        "items": [
+          "Vereinbarkeit von Beruf und Familie schwierig",
+          "Frauen wollen erst beruflich Fuß fassen",
+          "Je höher der Abschluss, desto später das erste Kind",
+          "Fehlender Partner, Männer übernehmen wenig Familienarbeit",
           "Vorbehalte gegen kinderreiche Familien",
-          "Vereinbarkeit von Beruf und Familie bleibt ein Problem",
-          "Frauen wollen erst beruflich Fuß fassen → erste Geburt später",
-          "Je höher der Abschluss, desto später das Kind",
-          "Fehlender Partner, Männer übernehmen Familienarbeit nur langsam",
-          "Konsum und Kosten für Kinder"
+          "Mehrkindfamilien: traditionelle Rollen, Frauen finanziell abhängig"
         ]
       },
       {
-        type: "term",
-        title: "Staatliche Gegenmaßnahmen",
-        source: "WiK S. 27 · Buch S. 23",
-        items: [
-          "Direkte Hilfen: Kindergeld, Elterngeld, Erziehungsgeld, Erziehungszeit",
-          "Infrastruktur: Ganztagesangebote in Kita und Schule",
-          "Familienpolitik: Steuervorteile, familienfreundliche Gesetze in Arbeit und Bildung",
-          "Gerechte Aufteilung der Familienarbeit fördern",
-          "Zuwanderungssaldo stabil halten oder erhöhen",
-          "Elterngeld + Elternzeit seit 1.1.2007, Geburtenziffer kaum verändert"
-        ]
-      },
-      {
-        type: "warning",
-        title: "Wichtig",
-        source: "WiK S. 27",
-        items: [
-          "Ob staatliche Anreize die private Kinderentscheidung beeinflussen, ist wissenschaftlich umstritten"
+        "type": "timeline",
+        "title": "Staatliche Gegenmaßnahmen",
+        "items": [
+          "Kindergeld, Elterngeld, Elternzeit (seit 2007)",
+          "Ganztagsangebote in Kita und Schule",
+          "Steuervorteile, familienfreundliche Arbeitswelt",
+          "Partnerschaftliche Aufteilung der Familienarbeit fördern",
+          "Zuwanderung",
+          "Wirkung auf die Geburtenrate umstritten, Elterngeld brachte kaum mehr Geburten"
         ]
       }
     ]
   },
   {
-    id: "folgen",
-    title: "1.3 Folgen",
-    badge: "1.3",
-    accent: "orange",
-    blocks: [
+    "id": "folgen",
+    "title": "Folgen",
+    "badge": "1.3",
+    "accent": "orange",
+    "blocks": [
       {
-        type: "term",
-        title: "Generationenvertrag",
-        source: "Heft · WK S. 34",
-        items: [
-          "Junge Generation unterstützt die alte, bekommt dafür im Alter ähnliche Unterstützung",
-          "Umfasst Rentensystem, soziale Sicherheit, Gesundheitsversorgung",
-          "Demografischer Wandel + steigende Lebenserwartung = Herausforderung",
-          "Problematisch v. a. wegen Solidarprinzip und Umlageverfahren",
-          "Arbeitende erarbeiten sich Recht auf faire Rente, unklar wie diese finanziert wird"
+        "type": "term",
+        "title": "Generationenvertrag",
+        "items": [
+          "Junge unterstützen die Alten und erhalten im Alter dieselbe Unterstützung",
+          "Umfasst Rente, soziale Sicherheit, Gesundheitsversorgung",
+          "Problem: immer weniger Beitragszahler für immer mehr Rentner",
+          "Solidarprinzip: Gemeinschaft hilft sich gegenseitig",
+          "Umlageverfahren: Beiträge der Arbeitenden zahlen die heutigen Renten",
+          "Unklar, wie künftige Renten finanziert werden"
         ]
       },
       {
-        type: "term",
-        title: "Begriffe dazu",
-        source: "Buch S. 37",
-        items: [
-          "Solidarprinzip: Mitglieder einer Gemeinschaft helfen sich gegenseitig, keiner ist allein verantwortlich",
-          "Umlageverfahren: Beitragszahler finanzieren die heutigen Rentner und erwerben so Anspruch auf die eigene Rente"
+        "type": "timeline",
+        "title": "Negative Folgen",
+        "items": [
+          "Steigende Kosten für Rente, Pflege, Gesundheit",
+          "Mehr Pflegebedürftige, Fachkräftemangel in der Pflege (bis 2035 bis zu 500.000)",
+          "Produktivität sinkt (Höhepunkt mit ca. 50) → Wohlstandseinbußen",
+          "Ältere konsumieren weniger",
+          "Kommunen müssen teuer umbauen (altersgerecht, Rückbau von Schulen)",
+          "Abwanderung vom Land, Stadt-Land- und Ost-West-Gefälle",
+          "Wirtshaus- und Ladensterben auf dem Dorf",
+          "Generationenkonflikt, Regionenkonflikt",
+          "Spannungen durch Zuwanderung"
         ]
       },
       {
-        type: "term",
-        title: "Fachkräftemangel",
-        source: "WK S. 34 · Buch S. 28–29",
-        items: [
-          "Mangel an qualifizierten Arbeitskräften, v. a. in der Pflege",
-          "Mehr Pflegebedürftige, weniger junge Menschen für Ausbildung",
-          "Folgen: überlastetes Personal, schlechtere Pflegequalität, schlechtere Versorgung Älterer",
-          "Prognose bis 2035: ca. 300.000 fehlen stationär, ca. 500.000 in der ganzen Pflege"
-        ]
-      },
-      {
-        type: "term",
-        title: "Alternde Gesellschaft → weniger Wohlstand",
-        source: "WK S. 34",
-        items: [
-          "Arbeitsproduktivität steigt bis ca. 50, danach sinkt sie",
-          "Mehr Ältere → Produktivität sinkt insgesamt",
-          "Ältere konsumieren zurückhaltender",
-          "→ Wohlstandseinbußen"
-        ]
-      },
-      {
-        type: "term",
-        title: "Altersgerechte Kommunen",
-        source: "WK S. 34",
-        items: [
-          "Mehr Mehrgenerationenhäuser und Pflegeheime, auch auf dem Land",
-          "ÖPNV, Freizeit, Einkaufen anpassen",
-          "Herausforderung: Bedürfnisse der Jungen nicht vergessen",
-          "Sonst Abwanderung Land → Stadt, Ost → West, regionale Unterschiede wachsen"
-        ]
-      },
-      {
-        type: "term",
-        title: "Generationen- und Regionenkonflikt",
-        source: "WK S. 34",
-        items: [
-          "Generationenkonflikt: unterschiedliche Ansichten und Werte von Alt und Jung",
-          "Ursachen: Lebenserfahrung, soziale und politische Haltung, Technik",
-          "Regionenkonflikt: Spannungen durch geografische und kulturelle Unterschiede",
-          "Lösung: Dialog, Verständnis, Kompromisse"
-        ]
-      },
-      {
-        type: "warning",
-        title: "Negative Effekte",
-        source: "WiK S. 35",
-        items: [
-          "Mehr Geld für Altersvorsorge nötig",
-          "Generationenvertrag unter Druck: weniger Einzahler, mehr Rentner",
-          "Auch Pflegeversicherung und Gesundheitssystem: mehr Pflegebedürftige, höhere Kosten",
-          "Jüngere müssen mit Wohlstandseinbußen rechnen",
-          "Kommunen müssen teuer umbauen (Rückbau oder Ausbau)",
-          "Stadt/Land- und Ost/West-Unterschiede bleiben, Städte wirken wie ein Magnet",
-          "Gefahr Generationenkonflikt, Zuwanderung kann Spannungen auslösen",
-          "Wirtshaussterben auf dem Dorf (Bayern 2006–2015 fast 1/4 weniger)"
-        ]
-      },
-      {
-        type: "timeline",
-        title: "Positive Effekte",
-        source: "WiK S. 35 · Buch S. 32–33",
-        items: [
+        "type": "timeline",
+        "title": "Positive Folgen",
+        "items": [
           "Mehr Arbeitsplätze in Pflege und Gesundheit",
-          "Zusammenhalt Jung/Alt, z. B. Mehrgenerationenhäuser (531 im Bundesprogramm, 2022)",
-          "Ressourcen (Bildung, Arbeit) verteilen sich auf weniger Menschen → mehr Chancen",
-          "Weniger Ressourcenverbrauch → Umwelt- und Klimaschutz",
+          "Neue Wohnformen stärken Zusammenhalt (Mehrgenerationenhäuser)",
+          "Bessere Chancen für Junge: mehr Ausbildungs- und Studienplätze pro Kopf",
           "Pro-Kopf-Einkommen kann steigen",
-          "Zuwanderung stärkt die Vielfalt"
+          "Weniger Ressourcenverbrauch → Klima- und Umweltschutz",
+          "Zuwanderung stärkt Vielfalt"
         ]
-      }
-    ]
-  },
-  {
-    id: "fallen",
-    title: "Schreibfallen",
-    badge: "Korrektur",
-    accent: "dark",
-    blocks: [
+      },
       {
-        type: "warning",
-        title: "Richtig schreiben",
-        source: "Heft",
-        items: [
-          "Bedeutung (nicht Beudettung)",
-          "Demografie, demografisch",
-          "gesellschaftlich, Entwicklungen, Entscheidungen",
-          "Geburtentief, Babyboomer, Pillenknick",
-          "Urnenform (nicht Uhrnen form), frauenlastig",
-          "Umlageverfahren, Solidarprinzip",
-          "Männermangel, geheiratet"
+        "type": "term",
+        "title": "Begriffe",
+        "items": [
+          "Fachkräftemangel: zu wenige qualifizierte Arbeitskräfte, v. a. in der Pflege",
+          "Generationenkonflikt: unterschiedliche Werte und Interessen von Alt und Jung",
+          "Regionenkonflikt: Spannungen zwischen Regionen (Stadt–Land, Ost–West)",
+          "Altersgerechte Kommune: Infrastruktur für Ältere (ÖPNV, Pflege, Einkaufen)",
+          "Mehrgenerationenhaus: Jung und Alt wohnen und helfen zusammen"
         ]
       }
     ]
