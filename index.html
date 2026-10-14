@@ -502,7 +502,7 @@
     <header class="masthead">
       <p class="label">Politik Lernzettel</p>
       <h1>Demografischer Wandel</h1>
-      <p class="subtitle">Kapitel 1, S. 8–44: Bevölkerung, Ursachen, Folgen, Rente und Migration. Kurzarbeit am 15.10.2026.</p>
+      <p class="subtitle">Kapitel 1, S. 8–35: Bevölkerung, Ursachen und Folgen (ohne 1.4). Kurzarbeit am 15.10.2026.</p>
     </header>
 
     <nav class="jump-nav" aria-label="Themenauswahl">
@@ -552,7 +552,7 @@
 
     function renderBlock(block) {
       const shapes = block.type === "shapes"
-        ? `<div class="shape-grid">${SHAPES.map((path, i) => `<figure>${shapeSvg(path)}<figcaption>Form ${i + 1}</figcaption></figure>`).join("")}</div>`
+        ? `<div class="shape-grid">${SHAPES.map((path, i) => `<figure>${shapeSvg(path)}<figcaption>${i + 1}. ${escapeHtml((block.labels || [])[i] || "")}</figcaption></figure>`).join("")}</div>`
         : "";
       return `
         <article class="block ${escapeHtml(block.type)}">

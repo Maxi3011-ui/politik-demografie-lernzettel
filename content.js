@@ -13,7 +13,8 @@ window.TOPICS = [
           "Kapitel 1: Die Bedeutung der demografischen Entwicklung für den gesellschaftlichen Zusammenhalt verstehen",
           "Buch S. 8–44",
           "Methoden: Diagramme analysieren + Bevölkerungspyramide",
-          "Wissen kompakt + Wissen im Kontext lernen"
+          "Wissen kompakt + Wissen im Kontext lernen",
+          "1.4 (Rente, Migration) kommt nicht dran"
         ]
       }
     ]
@@ -158,10 +159,33 @@ window.TOPICS = [
       {
         type: "shapes",
         title: "7 Formen aus dem Heft",
-        source: "Heft",
+        source: "Heft · Namen gegoogelt",
+        labels: ["Pyramide", "Pagode", "Bienenkorb", "Glocke", "Urne", "Zwiebel", "Pilz"],
         items: [
-          "Rein formbezogen, Linien bei 60 und 15 Jahren",
-          "Skizzen nachgezeichnet, Namen stehen weder im Heft noch im Buch"
+          "Rein formbezogen, Linien bei 60 und 15 Jahren"
+        ]
+      },
+      {
+        type: "term",
+        title: "Was die Form verrät",
+        source: "gegoogelt (Studyflix, LMU)",
+        items: [
+          "Pagode: sehr breite Basis, spitz → sehr starkes Wachstum, hohe Geburten- und Sterberate (z. B. Nigeria)",
+          "Pyramide: breite Basis, nach oben schmaler → wachsende Bevölkerung (Deutschland 1910, Entwicklungsländer)",
+          "Bienenkorb: Basis und Mitte etwa gleich breit, oben abgerundet → stationär, Geburten und Sterbefälle gleichbleibend (USA 2010)",
+          "Glocke: breite Mitte, unten wieder etwas breiter → stagnierend, wieder etwas mehr Geburten (Dänemark 1950er/60er)",
+          "Urne: schmale Basis, breite Mitte → schrumpfend, weniger Geburten, viele werden alt (Deutschland heute)",
+          "Zwiebel: unten schmal, bauchig → Übergang zu Überhang der Älteren, Urne = „überspitzte Zwiebel“",
+          "Pilz: dünner Stiel (kaum Junge), breiter Hut (viele Alte) → stark schrumpfend (Japan-Prognose)"
+        ]
+      },
+      {
+        type: "warning",
+        title: "Achtung",
+        source: "Hinweis",
+        items: [
+          "Namen stehen nicht im Heft und nicht im Buch, Bezeichnungen schwanken je nach Quelle",
+          "Echte Pyramiden sind meist Mischformen"
         ]
       }
     ]
@@ -551,6 +575,15 @@ window.TOPICS = [
       },
       {
         type: "term",
+        title: "Begriffe dazu",
+        source: "Buch S. 37",
+        items: [
+          "Solidarprinzip: Mitglieder einer Gemeinschaft helfen sich gegenseitig, keiner ist allein verantwortlich",
+          "Umlageverfahren: Beitragszahler finanzieren die heutigen Rentner und erwerben so Anspruch auf die eigene Rente"
+        ]
+      },
+      {
+        type: "term",
         title: "Fachkräftemangel",
         source: "WK S. 34 · Buch S. 28–29",
         items: [
@@ -619,118 +652,6 @@ window.TOPICS = [
           "Weniger Ressourcenverbrauch → Umwelt- und Klimaschutz",
           "Pro-Kopf-Einkommen kann steigen",
           "Zuwanderung stärkt die Vielfalt"
-        ]
-      }
-    ]
-  },
-  {
-    id: "rente",
-    title: "1.4 Staat: Rente",
-    badge: "1.4",
-    accent: "red",
-    blocks: [
-      {
-        type: "term",
-        title: "Prinzipien",
-        source: "Buch S. 37",
-        items: [
-          "Solidarprinzip: Mitglieder einer Gemeinschaft helfen sich gegenseitig",
-          "Umlageverfahren: Beitragszahler finanzieren die heutigen Rentner und erwerben Anspruch auf eigene Rente",
-          "Kapitaldeckung: jeder spart für die eigene Rente"
-        ]
-      },
-      {
-        type: "term",
-        title: "Rentenversicherung",
-        source: "WK S. 42",
-        items: [
-          "Pflichtversicherung bis zur Bemessungsgrenze (ca. 32 von 40 Mio. Arbeitnehmern)",
-          "Immer mehr Rentner pro Beitragszahler → Beiträge reichen nicht",
-          "Ca. 1/4 der Ausgaben aus Bundesmitteln",
-          "Beitragsbemessungsgrenze 2023: 7.300 € (West), 7.100 € (Ost)",
-          "Darüber keine Beiträge → Gutverdiener zahlen nur bis zur Grenze"
-        ]
-      },
-      {
-        type: "timeline",
-        title: "Staatliche Maßnahmen",
-        source: "WK S. 42 · Buch S. 36–39",
-        items: [
-          "Rentenreform 2001: kapitalgedeckte, geförderte Vorsorge (Riester)",
-          "Ziel: Beitragssatz dauerhaft unter 20 %, Rentenniveau bis 2025 auf 48 % senken",
-          "Generationengerechtigkeit = Belastung gleich verteilen",
-          "Rente mit 67: schrittweise 2012–2029, wegen höherer Lebenserwartung",
-          "Betriebliche Altersvorsorge: Teil vom Bruttolohn, steuerlich gefördert",
-          "Grundsicherung: schützt bei niedriger Rente vor Altersarmut"
-        ]
-      },
-      {
-        type: "warning",
-        title: "Probleme",
-        source: "WK S. 42 · WiK S. 43",
-        items: [
-          "Frührente mit Abschlägen + sinkendes Rentenniveau → Altersarmut",
-          "Private Vorsorge bisher nicht ausreichend aufgebaut",
-          "Riester: hohe Gebühren, wenig Rendite, ineffizient",
-          "Renteneintritt mit ca. 70: statistisch nachvollziehbar, politisch höchst umstritten",
-          "Staat muss ständig nachsteuern"
-        ]
-      },
-      {
-        type: "remember",
-        title: "Kernaussage",
-        source: "WiK S. 43",
-        items: [
-          "Altersvorsorge und Migration hängen am Wert Solidarität",
-          "Einzahler brauchen Vertrauen, später selbst zu profitieren",
-          "Sonst Frage nach Generationengerechtigkeit → Zusammenhalt und Demokratie in Gefahr"
-        ]
-      }
-    ]
-  },
-  {
-    id: "migration",
-    title: "1.4 Staat: Migration",
-    badge: "1.4",
-    accent: "red",
-    blocks: [
-      {
-        type: "term",
-        title: "Wirkung der Zuwanderung",
-        source: "Buch S. 40",
-        items: [
-          "Zuwanderer im Schnitt jünger → Alterung wird gebremst, aber nicht umgekehrt"
-        ]
-      },
-      {
-        type: "timeline",
-        title: "Wissen im Kontext",
-        source: "WiK S. 43",
-        items: [
-          "Staatliche Maßnahmen haben die Geburtenrate nicht deutlich erhöht",
-          "Für Bestandserhalt nötig: Nettozuwanderung 300.000–400.000 pro Jahr (v. a. Erwerbsalter)",
-          "Zuwanderer zahlen in Sozialkassen ein → stabilisiert Solidarprinzip von Kranken- und Rentenversicherung",
-          "Nötig: mehr Einwanderungsregeln, z. B. Fachkräfteeinwanderungsgesetz",
-          "Migration aus Krisengebieten bleibt",
-          "Integration ist Voraussetzung für Akzeptanz, von beiden Seiten gewollt"
-        ]
-      },
-      {
-        type: "term",
-        title: "Außenwanderungssaldo",
-        source: "Buch S. 41",
-        items: [
-          "Zuzüge aus dem Ausland minus Wegzüge ins Ausland",
-          "Negativ = Außenwanderungsdefizit"
-        ]
-      },
-      {
-        type: "term",
-        title: "Vorbild Kanada?",
-        source: "Buch S. 44",
-        items: [
-          "Punktesystem bevorzugt hochqualifizierte Arbeitskräfte",
-          "6 Faktoren: Sprache, Alter, Ausbildung, Berufserfahrung, Jobangebot, Anpassungsfähigkeit"
         ]
       }
     ]
