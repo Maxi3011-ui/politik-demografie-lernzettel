@@ -8,4 +8,6 @@ Lernzettel für Handy und Apple Watch zu Politik aktuell G9, Kapitel 1 (S. 8–3
 - 7 Pyramidenformen mit Namen (Pyramide, Pagode, Bienenkorb, Glocke, Urne, Zwiebel, Pilz)
 - Quellen: Heft, Musterlösung, Wissen kompakt, Wissen im Kontext
 
+Live: https://maxi3011-ui.github.io/politik-demografie-lernzettel/
+
 Inhalt steht in `content.js`, Darstellung in `index.html`.
