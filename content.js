@@ -61,7 +61,7 @@ window.TOPICS = [
     blocks: [
       {
         type: "timeline",
-        title: "Geburtsjahre (Alter = Pyramidenjahr − Geburtsjahr)",
+        title: "Geburtsjahre",
         items: [
           "1915–19: Tief 1. Weltkrieg",
           "1932–33: Tief Weltwirtschaftskrise",
@@ -69,15 +69,6 @@ window.TOPICS = [
           "1955–69: Babyboomer, Spitze 1964",
           "ab 1966–75: Pillenknick",
           "1990–94: Tief nach Wiedervereinigung (Osten)"
-        ]
-      },
-      {
-        type: "term",
-        title: "Alter in der Pyramide",
-        items: [
-          "2009: Boomer 40–54, Pillenknick 34–43, 2. WK 63–69",
-          "2022: Boomer 53–67, Pillenknick 47–56, 2. WK 76–82",
-          "2030: Boomer 61–75, Pillenknick 55–64, 2. WK 84–90, Wende 36–40"
         ]
       },
       {
