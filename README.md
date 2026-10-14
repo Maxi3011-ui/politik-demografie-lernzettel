@@ -15,7 +15,7 @@ Die sieben Bezeichnungen aus der vorhandenen Fassung bleiben erhalten: Pyramiden
 
 ## Bedienung
 
-Das Auswahlmenü springt direkt zu Kapiteln oder Unterthemen und folgt beim Scrollen der Leseposition. Unterthemen sind per URL verlinkbar, z. B. `#rente` oder `#pyramide-analysieren`. Am Seitenende stehen die Quellen. Eine Druckansicht ist per Browserdruck verfügbar.
+Das Auswahlmenü enthält nur die drei Hauptkapitel und folgt beim Scrollen der Leseposition. Unterthemen sind per URL verlinkbar, z. B. `#rente` oder `#pyramide-analysieren`. Am Seitenende stehen die Quellen. Eine Druckansicht ist per Browserdruck verfügbar.
 
 ## Inhalte und Quellen
 

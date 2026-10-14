@@ -548,8 +548,8 @@
     </header>
 
     <nav class="jump-nav" aria-label="Themenauswahl">
-      <label class="jump-label" for="topicSelect">Kapitel & Unterthemen</label>
-      <select id="topicSelect" aria-label="Kapitel und Unterthemen"></select>
+      <label class="jump-label" for="topicSelect">Kapitel auswählen</label>
+      <select id="topicSelect" aria-label="Kapitel auswählen"></select>
     </nav>
 
     <section class="topics" id="topics" aria-label="Lernstoff" tabindex="-1"></section>
@@ -625,10 +625,7 @@
 
     function render() {
       topicSelect.innerHTML = topics.map(topic =>
-        `<optgroup label="${escapeHtml(topic.title)}">
-          <option value="${escapeHtml(topic.id)}">${escapeHtml(topic.title)} · Überblick</option>
-          ${topic.blocks.map(block => `<option value="${escapeHtml(block.id)}">${escapeHtml(block.title)}</option>`).join("")}
-        </optgroup>`
+        `<option value="${escapeHtml(topic.id)}">${escapeHtml(topic.title)}</option>`
       ).join("");
 
       topicsRoot.innerHTML = topics.map((topic, index) => `
@@ -666,7 +663,8 @@
       const target = document.getElementById(id);
       if (!target) return;
       if (id === "anfang" || id === "topics") topicSelect.value = topics[0].id;
-      if (Array.from(topicSelect.options).some(option => option.value === id)) topicSelect.value = id;
+      const chapter = target.closest(".topic-card");
+      if (chapter) topicSelect.value = chapter.id;
       if (moveFocus) target.focus({ preventScroll: true });
       target.scrollIntoView({ behavior: reducedMotion.matches ? "instant" : "smooth", block: "start" });
     }
@@ -678,8 +676,8 @@
     window.addEventListener("hashchange", () => jumpTo(location.hash.slice(1) || "anfang"));
     if (location.hash) requestAnimationFrame(() => jumpTo(location.hash.slice(1)));
 
-    // Die Auswahl folgt beim Lesen dem zuletzt erreichten Kapitel/Unterthema.
-    const anchors = Array.from(document.querySelectorAll(".topic-card, .block"));
+    // Die Auswahl folgt beim Lesen dem zuletzt erreichten Kapitel.
+    const anchors = Array.from(document.querySelectorAll(".topic-card"));
     let scheduled = false;
     window.addEventListener("scroll", () => {
       if (scheduled) return;
