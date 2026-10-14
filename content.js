@@ -70,14 +70,6 @@ window.TOPICS = [
           "ab 1966–75: Pillenknick",
           "1990–94: Tief nach Wiedervereinigung (Osten)"
         ]
-      },
-      {
-        type: "term",
-        title: "Fachbegriffe",
-        items: [
-          "Babyboomer: geburtenstarke Jahrgänge nach dem 2. WK (Wirtschaftswunder)",
-          "Pillenknick: Geburtenrückgang ab Mitte 1960er, zeitgleich mit der Antibabypille, aber auch durch Wertewandel und berufstätige Frauen"
-        ]
       }
     ]
   },
