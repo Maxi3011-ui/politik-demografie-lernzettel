@@ -97,20 +97,20 @@ window.TOPICS = [
       {
         type: "shapes",
         title: "7 Grundformen",
-        labels: ["Pyramide", "Pagode", "Bienenkorb", "Glocke", "Urne", "Zwiebel", "Pilz"],
+        labels: ["Pyramidenform", "verbreiterte Pyramidenform", "stationäre Form", "Glockenform", "Urnenform", "Birnenform", "Tropfenform"],
         items: []
       },
       {
         type: "term",
         title: "Bedeutung",
         items: [
-          "Pyramide: wächst (Entwicklungsland, DE 1910)",
-          "Pagode: wächst stark",
-          "Bienenkorb: stabil",
-          "Glocke: stagniert",
-          "Urne: schrumpft, altert (DE heute)",
-          "Zwiebel: Übergang zur Überalterung",
-          "Pilz: schrumpft stark (Japan)"
+          "Pyramidenform: viele Geburten, hohe Sterblichkeit → wächst (DE 1910)",
+          "Verbreiterte Pyramidenform: Basis noch breiter → wächst stark",
+          "Stationäre Form: Geburten ≈ Sterbefälle → stabil",
+          "Glockenform: Geburten gleichbleibend, mehr werden alt → stagniert",
+          "Urnenform: Basis schmaler als Mitte → schrumpft, altert (DE heute)",
+          "Birnenform: Geburten zuletzt gesunken, wenige Alte → Übergang zum Schrumpfen",
+          "Tropfenform: viele Alte, kaum Junge → schrumpft stark, überaltert"
         ]
       }
     ]

@@ -276,7 +276,7 @@
 
     .shape-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
       gap: 8px;
       margin-top: 10px;
     }
@@ -297,6 +297,8 @@
     }
 
     .shape-grid figcaption {
+      hyphens: manual;
+      line-height: 1.2;
       color: var(--muted);
       font-size: 0.72rem;
       font-weight: 800;
@@ -520,21 +522,19 @@
     const topicsRoot = document.getElementById("topics");
     const topicSelect = document.getElementById("topicSelect");
 
-    // Pyramidenformen aus dem Heft, nachgezeichnet (Linien bei 60 und 15 Jahren)
+    // Pyramidenformen aus dem Heft, nachgezeichnet
     const SHAPES = [
-      "M10 46 L30 8 L50 46",
-      "M5 46 Q24 42 28 26 Q30 14 31 7 Q34 30 44 40 Q50 44 55 46",
-      "M15 46 L15 30 Q18 16 30 8 Q42 16 45 30 L45 46",
-      "M5 45 Q12 46 16 40 Q22 18 36 8 Q42 8 43 26 L44 42 Q47 46 55 46",
-      "M19 46 Q14 34 15 24 Q22 14 33 5 Q40 14 43 22 Q43 34 37 46",
-      "M25 46 L17 33 L37 4 L44 30 L35 46",
-      "M30 46 L30 27 Q18 28 18 22 Q24 12 33 2 L35 15 Q42 22 30 27"
+      "M14 46 L30 4 L46 46",
+      "M6 46 Q24 38 30 4 Q36 38 54 46",
+      "M20 46 Q19 14 30 4 Q41 14 40 46",
+      "M8 46 Q19 45 20 30 Q20 6 30 4 Q40 6 40 30 Q41 45 52 46",
+      "M22 46 L20 14 Q20 4 30 4 Q40 4 40 14 L38 46",
+      "M27 46 L21 38 L27 30 L29 4 L31 4 L33 30 L39 38 L33 46",
+      "M26 46 Q17 30 15 21 Q14 11 30 5 Q46 11 45 21 Q43 30 34 46"
     ];
 
     function shapeSvg(path) {
       return `<svg viewBox="0 0 60 50" aria-hidden="true">
-        <line x1="2" y1="8" x2="58" y2="8" stroke="#9aa3a8" stroke-width="0.8" stroke-dasharray="2 2"/>
-        <line x1="2" y1="26" x2="58" y2="26" stroke="#9aa3a8" stroke-width="0.8" stroke-dasharray="2 2"/>
         <line x1="2" y1="46" x2="58" y2="46" stroke="#171c1f" stroke-width="1"/>
         <path d="${path}" fill="none" stroke="#5b3f91" stroke-width="1.8" stroke-linejoin="round"/>
       </svg>`;
