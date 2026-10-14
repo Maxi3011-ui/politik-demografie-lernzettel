@@ -1,7 +1,7 @@
 window.TOPICS = [
   {
     id: "begriffe",
-    title: "Grundbegriffe",
+    title: "Begriffe",
     badge: "1.1",
     accent: "blue",
     blocks: [
@@ -54,7 +54,7 @@ window.TOPICS = [
   },
   {
     id: "entwicklung",
-    title: "Bevölkerung & Sozialstruktur",
+    title: "Bevölkerung",
     badge: "1.1",
     accent: "blue",
     blocks: [
@@ -98,7 +98,7 @@ window.TOPICS = [
   },
   {
     id: "einschnitte",
-    title: "Einschnitte & Ursachen",
+    title: "Einschnitte",
     badge: "1.1",
     accent: "blue",
     blocks: [
@@ -155,7 +155,7 @@ window.TOPICS = [
   },
   {
     id: "formen",
-    title: "Pyramidenformen",
+    title: "Formen",
     badge: "Formen",
     accent: "blue",
     blocks: [
@@ -237,7 +237,7 @@ window.TOPICS = [
   },
   {
     id: "methode-diagramme",
-    title: "Diagramme analysieren",
+    title: "Diagramme",
     badge: "Methode",
     accent: "purple",
     blocks: [
@@ -286,7 +286,7 @@ window.TOPICS = [
   },
   {
     id: "familie",
-    title: "Familie & Lebensformen",
+    title: "Familie",
     badge: "1.2",
     accent: "green",
     blocks: [
@@ -343,7 +343,7 @@ window.TOPICS = [
   },
   {
     id: "uebergang",
-    title: "Demografischer Übergang",
+    title: "4 Phasen",
     badge: "1.2",
     accent: "green",
     blocks: [
@@ -362,7 +362,7 @@ window.TOPICS = [
   },
   {
     id: "ursachen",
-    title: "Ursachen Geburtenrückgang",
+    title: "Warum wenig Kinder",
     badge: "1.2",
     accent: "green",
     blocks: [

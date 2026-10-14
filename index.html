@@ -567,7 +567,7 @@
 
     function render() {
       topicSelect.innerHTML = topics.map((topic, index) =>
-        `<option value="${escapeHtml(topic.id)}">${index + 1}. ${escapeHtml(topic.title)}</option>`
+        `<option value="${escapeHtml(topic.id)}">${escapeHtml(topic.title)}</option>`
       ).join("");
 
       topicsRoot.innerHTML = topics.map((topic, index) => `
