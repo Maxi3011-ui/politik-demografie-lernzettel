@@ -276,9 +276,9 @@
 
     .shape-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
       gap: 8px;
-      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     .shape-grid figure {
@@ -493,8 +493,13 @@
       }
 
       .shape-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 5px;
+      }
+
+      .shape-grid figcaption {
+        font-size: 0.6rem;
+        hyphens: auto;
       }
     }
   </style>
@@ -504,7 +509,7 @@
     <header class="masthead">
       <p class="label">Politik Lernzettel</p>
       <h1>Demografischer Wandel</h1>
-      <p class="subtitle">Kapitel 1.1–1.3 kurz zusammengefasst.</p>
+      <p class="subtitle">Kapitel 1: Bevölkerung, Ursachen, Folgen.</p>
     </header>
 
     <nav class="jump-nav" aria-label="Themenauswahl">
@@ -551,7 +556,7 @@
 
     function renderBlock(block) {
       const shapes = block.type === "shapes"
-        ? `<div class="shape-grid">${SHAPES.map((path, i) => `<figure>${shapeSvg(path)}<figcaption>${i + 1}. ${escapeHtml((block.labels || [])[i] || "")}</figcaption></figure>`).join("")}</div>`
+        ? `<div class="shape-grid">${SHAPES.map((path, i) => `<figure>${shapeSvg(path)}<figcaption>${escapeHtml((block.labels || [])[i] || "")}</figcaption></figure>`).join("")}</div>`
         : "";
       return `
         <article class="block ${escapeHtml(block.type)}">
@@ -559,8 +564,8 @@
             <h3>${escapeHtml(block.title)}</h3>
             ${block.source ? `<span class="source">${escapeHtml(block.source)}</span>` : ""}
           </div>
-          ${block.items.length ? `<ul>${block.items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : ""}
           ${shapes}
+          ${block.items.length ? `<ul>${block.items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : ""}
         </article>
       `;
     }
